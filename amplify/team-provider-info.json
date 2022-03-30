@@ -1,0 +1,20 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-petsignal-staging-120630-authRole",
+      "UnauthRoleArn": "arn:aws:iam::850638956757:role/amplify-petsignal-staging-120630-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::850638956757:role/amplify-petsignal-staging-120630-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-petsignal-staging-120630-deployment",
+      "UnauthRoleName": "amplify-petsignal-staging-120630-unauthRole",
+      "StackName": "amplify-petsignal-staging-120630",
+      "StackId": "arn:aws:cloudformation:eu-west-3:850638956757:stack/amplify-petsignal-staging-120630/d5c48c00-b021-11ec-b4cc-0611d6d37f82",
+      "AmplifyAppId": "d1ie2kv9fh6nwz"
+    },
+    "categories": {
+      "auth": {
+        "petsignal": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resourceName": "s3petsignalstoragef9bdefd5",
+  "bucketName": "petsignal-storage-f9bdefd5",
+  "policyUUID": "8d1c1cdd",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "READ"
+  ],
+  "authAccess": [
+    "READ"
+  ]
+}

@@ -1,0 +1,77 @@
+type GPSCOORDINATES {
+  latitude: Int
+  longitude: Int
+}
+
+type USER @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  lastname: String
+  firstname: String
+  username: String
+  email: String
+  password: String
+  group: String
+  active: Boolean
+  gpsCoordinates: GPSCOORDINATES
+  creationDate: AWSDate
+  validationDate: AWSDate
+  telephone: AWSPhone
+}
+
+type CLASSIFIED {
+  creationDate: AWSDate
+  userId: String
+  username: String
+  gpsCoordinates: GPSCOORDINATES
+  photo: AWSURL
+  comment: String
+}
+
+enum GENDER {
+  MALE
+  FEMELLE
+  INCONNU
+}
+
+enum ANIMALTYPE {
+  CHAT
+  CHIEN
+  AUTRE
+}
+
+enum SIGNALTYPE {
+  PERDU
+  TROUVE
+  VU
+}
+
+type REPORT {
+  type: SIGNALTYPE
+  animalType: ANIMALTYPE
+  photo: AWSURL
+  animalName: String
+  age: Int
+  gender: GENDER
+  chip: Boolean
+  identificationNumber: String
+  gpsCoordinates: GPSCOORDINATES
+  description: String
+}
+
+type LOCATION {
+  latitude: Float
+  longitude: Float
+}
+
+type SIGNAL @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  creationDate: AWSDate
+  idUser: String
+  username: String
+  userEmail: AWSEmail
+  telephone: AWSPhone
+  location: LOCATION
+  report: REPORT
+  classified: CLASSIFIED
+}
+ 
