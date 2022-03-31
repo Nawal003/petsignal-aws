@@ -3,7 +3,7 @@ type GPSCOORDINATES {
   longitude: Float
 }
 
-type USER @model @auth(rules: [{allow: public}]) {
+type USER @model @auth(rules: [{ allow: public }]) {
   id: ID!
   lastname: String
   firstname: String
@@ -63,7 +63,7 @@ type LOCATION {
   longitude: Float
 }
 
-type SIGNAL @model @auth(rules: [{allow: public}]) {
+type SIGNAL @model @auth(rules: [{ allow: public }]) {
   id: ID!
   creationDate: AWSDate
   idUser: String
@@ -74,4 +74,3 @@ type SIGNAL @model @auth(rules: [{allow: public}]) {
   report: REPORT
   classified: CLASSIFIED
 }
- 

@@ -1,6 +1,6 @@
 type GPSCOORDINATES {
-  latitude: Float
-  longitude: Float
+  latitude: Int
+  longitude: Int
 }
 
 type USER @model @auth(rules: [{allow: public}]) {

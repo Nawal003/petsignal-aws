@@ -3,7 +3,7 @@
   "serviceConfiguration": {
     "apiName": "petsignal",
     "serviceName": "AppSync",
-    "gqlSchemaPath": "/tmp/amplify-0b72a6f1-4dcb-44e9-b19d-04169358304b/amplify/backend/api/petsignal/schema.graphql",
+    "gqlSchemaPath": "/tmp/amplify-630fad62-0cfd-45cb-ba29-3c68d1a4376c/amplify/backend/api/petsignal/schema.graphql",
     "defaultAuthType": {
       "mode": "API_KEY",
       "keyDescription": "api key description",
